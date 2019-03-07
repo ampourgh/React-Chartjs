@@ -1,0 +1,77 @@
+* {
+ background: #fff;
+}
+.chart {
+ background: #fff;
+ width: 800px;
+ height: 300px;
+}
+
+.bar {
+ fill: rgb(0, 80, 146);
+}
+
+.bar-highlight {
+ fill: rgb(7, 130, 231);
+}
+
+.yLines .tick line {
+ stroke: silver;
+ stroke-width: 1;
+ opacity: 0.2;
+}
+
+.axis path {
+ stroke: silver;
+}
+
+.axis .tick line {
+ stroke: silver;
+}
+
+.axis .tick text {
+ fill: #000;
+ stroke: none;
+}
+
+.limit {
+ stroke: silver;
+ stroke-width: 1;
+}
+
+.limitDiff {
+ stroke: silver;
+ stroke-width: 2;
+ stroke-linecap: round;
+ stroke-dasharray: 1 3;
+ stroke-opacity: 0.5;
+}
+
+.limitDiffPoint {
+ fill: #000;
+ stroke: none;
+ opacity: 0.8;
+}
+
+.limitText {
+ fill: #222;
+ stroke: none;
+ text-anchor: middle;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 100;
+ font-size: 10px;
+}
+
+.limitLabelCircle {
+ fill: #000;
+ stroke: none;
+}
+
+.limitLabelText {
+ fill: #fff;
+ stroke: none;
+ text-anchor: middle;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 100;
+ font-size: 20px;
+}
