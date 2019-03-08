@@ -69,7 +69,7 @@ const yScale = d3
  .scaleLinear()
  .range([height, 0])
  .domain([0, 100]);
- 
+
 yScale(20);
 
 const makeYLines = () => d3.axisLeft().scale(yScale);

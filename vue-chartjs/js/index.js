@@ -6,40 +6,27 @@ Vue.component('line-chart', {
     this.renderChart({
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
       datasets: [
-        {
-          label: 'Analytics Per Month',
-          backgroundColor: '#f87979',
-          data: [40, 39, 10, 40, 39, 80, 40, 55, 20, 40, 35, 45],
-          backgroundColor:[
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(54, 162, 235, 0.6)',
-            'rgba(255, 206, 86, 0.6)',
-            'rgba(75, 192, 192, 0.6)',
-            'rgba(153, 102, 255, 0.6)',
-            'rgba(255, 159, 64, 0.6)',
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(54, 162, 235, 0.6)',
-            'rgba(255, 206, 86, 0.6)',
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(54, 162, 235, 0.6)'
-          ],
-          borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'
-          ],
-          borderWidth: 1
-        }
+          {
+              label: "Harpo",
+              fillColor: "blue",
+              backgroundColor: "yellow",
+              data: [4,3,7,4,5,6,8,3,7,2,7,6]
+          },
+          {
+              label: "Chico",
+              fillColor: "red",
+              backgroundColor: "blue",
+              data: [6,8,3,7,2,7,6,4,3,5,7,2]
+          },
+          {
+              label: "Groucho",
+              fillColor: "green",
+              backgroundColor: "green",
+              data: [7,2,6,7,4,5,6,8,3,7,4,5]
+          }
       ]
-    }, {responsive: true, maintainAspectRatio: false})
+    },
+    {responsive: true, maintainAspectRatio: false})
   }
 
 })
@@ -48,5 +35,11 @@ var vm = new Vue({
   el: '.app',
   data: {
     message: 'Vue.js render of Graphjs'
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'something'
+    }
   }
 })
