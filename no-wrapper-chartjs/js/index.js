@@ -53,9 +53,11 @@ datasets: [
           maxBarThickness: 100
         },
         ticks: {
+          fontSize: 14,
           suggestedMin: 4, // Set minimum scale, otherwise it will be the lowest value in data
           suggestedMax: 8,
-          maxTicksLimit: 5
+          maxTicksLimit: 5,
+          fixedStepSize: .5
         }
       }]
     },
