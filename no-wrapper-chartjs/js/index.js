@@ -36,22 +36,28 @@ datasets: [
     responsive: true,
     maintainAspectRatio: false,
     scales: {
-        xAxes: [{
-            stacked: false,
-    gridLines: {
-      display: false
-    }
-        }],
-        yAxes: [{
-    gridLines: {
-      maxBarThickness: 100
-    },
-    ticks: {
-      suggestedMin: 4, // Set minimum scale, otherwise it will be the lowest value in data
-      suggestedMax: 8,
-      maxTicksLimit: 5
-    }
-        }]
+
+      xAxes: [{
+          stacked: false,
+          gridLines: {
+            display: false
+          }
+      }],
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          fontSize: 14,
+          labelString: "y-axis title here",
+        },
+        gridLines: {
+          maxBarThickness: 100
+        },
+        ticks: {
+          suggestedMin: 4, // Set minimum scale, otherwise it will be the lowest value in data
+          suggestedMax: 8,
+          maxTicksLimit: 5
+        }
+      }]
     },
     title:{
       display: true,
@@ -60,22 +66,22 @@ datasets: [
   fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
     },
     legend:{
-      display:true,
-      position:'right',
-      labels:{
+      display: true,
+      position:'top',
+      labels: {
         fontColor:'#000',
-  fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+        fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
       }
     },
-    layout:{
-      padding:{
+    layout: {
+      padding: {
         left:0,
         right:0,
         bottom:0,
         top:0
       }
     },
-    tooltips:{
+    tooltips: {
       enabled:true
     }
   }
