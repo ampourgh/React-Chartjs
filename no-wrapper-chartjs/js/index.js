@@ -13,24 +13,24 @@ var values2018 = [7,5,6,7,5,7,6,8,5,7,5,5];
 let massPopChart = new Chart(myChart, {
   type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
   data:{
-labels: months,
-datasets: [
-  {
-    label: "2016",
-    backgroundColor: "rgba(51, 51, 153, .65)", //#333399
-    data: values2016
-  },
-  {
-    label: "2017",
-    backgroundColor: "rgba(92, 214, 92, .65)",  //#5cd65c
-    data: values2017
-  },
-  {
-    label: "2018",
-    backgroundColor: "rgba(230, 184, 0, .65)", //#e6b800
-    data: values2018
-  }
-]
+  labels: months,
+  datasets: [
+    {
+      label: "2016",
+      backgroundColor: "rgba(51, 51, 153, .65)", //#333399
+      data: values2016
+    },
+    {
+      label: "2017",
+      backgroundColor: "rgba(92, 214, 92, .65)",  //#5cd65c
+      data: values2017
+    },
+    {
+      label: "2018",
+      backgroundColor: "rgba(230, 184, 0, .65)", //#e6b800
+      data: values2018
+    }
+  ]
   },
   options:{
     responsive: true,
